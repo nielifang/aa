@@ -1,0 +1,64 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static 'images/smu.jpg' %}" rel="icon">
+    <link href="{% static 'css/tool/jquery-ui.css' %}" rel="stylesheet">
+    <link href="{% static 'css/tool/google-api.css' %}" rel="stylesheet">
+    <link href="{% static 'css/tool/bootstrap_v4/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.vessel.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.common.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.input.css' %}" rel="stylesheet">
+</head>
+<body id="page-top">
+<div class="vessel">
+    <div class="allVessels col-md-3">
+        <div class="form-group">
+            <h3>请选择船舶</h3>
+            <select class="form-control" id="vesselSelect">
+                {% for v in all_vessel %}
+                    <option>{{ v }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <div id="control-buttons">
+        <div id="buttons-bay" class="d-flex flex-row">
+            <button type="button" class="btn btn-outline-primary createVessel"
+                    onclick="add_vessel()">增加船舶
+            </button>
+        </div>
+        <div id="buttons-vessel-struct" class="d-flex flex-row">
+            <button type="button" class="btn btn-outline-success bayCombineInfo"
+                    onclick="get_combined_info()">当前组贝
+            </button>
+            <button type="button" class="btn btn-outline-success createAllBaysStruct"
+                    onclick="combineReset()">重新组贝
+            </button>
+            <button type="button" class="btn btn-outline-success createStowage"
+                    onclick="combineToConfirm()">确认组贝
+            </button>
+            {#            <button type="button" class="btn btn-outline-success createLoadOrUnload"#}
+            {#                    onclick="createLoadOrUnloadInfo()"></button>#}
+        </div>
+    </div>
+    <div class="zoomToggle d-flex flex-row">
+        <input id="test" min="1" max="10" value='10' step="1"
+               onchange="showVal(this.value)" type="range"/>
+    </div>
+    <div class="mainArea">
+        <div class="newBayArea"></div>
+        <div class="allBaysStruct"></div>
+        <div class="vesselAreaSide"></div>
+        <div class="vesOperationInfo"></div>
+        <div class="vesselStowageInfo"></div>
+    </div>
+</div>
+<script src="{% static 'js/tool/jquery_v3/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'js/tool/jquery-ui.min.js' %}"></script>
+<script src="{% static 'js/tool/bootstrap_v4/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/custom.vessel.js' %}"></script>
+</body>
+</html>

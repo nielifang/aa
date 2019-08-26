@@ -1,0 +1,778 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*************** YARD-AREA ***************/
+.bay_Y {
+    width: 4%;
+    height: auto;
+    background-color: black;
+    float: left;
+    margin-top: 100px;
+}
+
+.bay_Y_num {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: skyblue;
+    float: top;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.box_A_title, .box_B_title, .box_C_title,
+.box_D_title, .box_E_title, .box_F_title {
+    /*width:14.58%;*/
+    width: 16.6666%;
+    height: auto;
+    background-color: lightgrey;
+    float: left;
+    padding-left: 9px;
+    padding-right: 9px;
+    box-sizing: border-box;
+}
+
+.box_B_title {
+    background-color: lightgrey;
+}
+
+.box_title {
+    width: 96%;
+    height: auto;
+    background-color: black;
+    margin-left: 4%;
+    position: absolute;
+}
+
+.box_name {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: skyblue;
+}
+
+.box_col {
+    width: 10%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.box_A, .box_B, .box_C,
+.box_D, .box_E, .box_F {
+    width: 16%;
+    height: auto;
+    background-color: lightgrey;
+    float: left;
+    margin-top: 100px;
+    padding-left: 9px;
+    padding-right: 9px;
+    box-sizing: border-box;
+}
+
+.container-all {
+    width: 9.999%;
+    height: 45px;
+    float: left;
+    box-sizing: border-box;
+    border: 1px black solid;
+    background-color: darksalmon;
+}
+
+.container_information {
+    width: 600px;
+    height: 300px;
+    background-color: wheat;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.con-info-table-outer {
+    float: left;
+    width: 400px;
+    height: 100%
+}
+
+.container_information_table {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px black solid;
+    text-align: center;
+}
+
+#container_information_col {
+    background-color: #a9a9a9;
+}
+
+.YARD-AREA {
+    position: relative;
+}
+
+.bay_blank {
+    position: absolute;
+    width: 4%;
+    height: 100px;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    border: 1px black solid;
+    line-height: 100px;
+    text-align: center;
+}
+
+.YARD-AREA::-webkit-scrollbar {
+    display: none
+}
+
+.con {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+#add_table {
+    float: left;
+    width: 198px;
+    height: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+#add_table > .add_table {
+    background-color: wheat;
+    border: 1px;
+    width: 198px;
+    height: 100%;
+}
+
+#add_table > .add_table tr {
+    background-color: darkgray;
+    height: 10%;
+}
+
+.table-confirm {
+    colspan: 11;
+    background-color: #a9a9a9;
+    alignment: center;
+}
+
+#container_information_button {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/**************YARD-AREA*******************/
+/******* VESSEL-AREA *******************/
+.VESSEL-AREA {
+    overflow-x: auto;
+}
+
+#control-buttons {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#control-buttons > div > button {
+    margin: 5px;
+}
+
+.zoomToggle {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.mainArea {
+    width: 100%;
+}
+
+.bayArea .bayZone_20 {
+    background: #2f96b4;
+    width: 38px;
+    height: 30px;
+    float: left;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* combined bay area */
+.bayArea .bayZone_inch40 {
+    width: 38px;
+    height: 30px;
+    float: left;
+    background-color: lightgrey;
+    margin: 2px;
+    position: relative;
+}
+
+.newBayArea .newBay20 {
+    background: #2f96b4;
+    width: 38px;
+    height: 60px;
+    float: left;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** newBayArea **/
+.newBayArea .comBay20_40 {
+    width: 80px;
+    height: 60px;
+    float: left;
+    margin: 2px;
+}
+
+.newBayArea .comBay20_40 .newBay40InCom {
+    width: 80px;
+    height: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.newBayArea .comBay20_40 .newBay20InComParent {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    background: #2f96b4;
+}
+
+.newBayArea .comBay20_40 .newBay20InComParent .newBay20InComLeft {
+    width: 40px;
+    height: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid silver;
+}
+
+.newBayArea .comBay20_40 .newBay20InComParent .newBay20InComRight {
+    width: 40px;
+    height: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid silver;
+}
+
+/* combined bay area */
+/* vessel stowage info */
+.vesselStowageInfo {
+    overflow-y: scroll;
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 1000px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.vesselStowageInfo > .vesselHeader {
+    margin-top: 10px;
+    grid-column: 1/13;
+    grid-row: 1;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(63, 23, 227);
+}
+
+.vesselStowageInfo > .baysStowageArea {
+    display: grid;
+    grid-column: 1/13;
+    grid-row: 2;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.vesselStowageInfo > .baysStowageArea > .bayStowage {
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid rgb(79, 185, 227);
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.vesselStowageInfo > .baysStowageArea > .bayStowage > .header {
+    grid-column: 2/10;
+    grid-row: 1;
+    background-color: #dda20a;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vesselStowageInfo > .baysStowageArea > .bayStowage > .content {
+    grid-column: 1/10;
+    grid-row: 2;
+    background-color: #dda20a;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vesselBodyInLoading {
+    background: black;
+}
+
+/* vessel stowage info */
+/* container pending info */
+.vesOperationInfo {
+    margin-top: 30px;
+}
+
+.vesOperationInfo .above {
+    margin-bottom: 20px;
+}
+
+.above > .unload,
+.above > .load,
+.below > .unload,
+.below > .load {
+    display: inline-flex;
+}
+
+.above > .unload > .bay_20,
+.below > .unload > .bay_20 {
+    background: #b477b1;
+    width: 38px;
+    height: 60px;
+    float: left;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.above > .load > .bay_20,
+.below > .load > .bay_20 {
+    background: #3f45b4;
+    width: 38px;
+    height: 60px;
+    float: left;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.above > .unload > .comBay,
+.above > .unload > .comBay,
+.above > .load > .comBay,
+.below > .unload > .comBay,
+.below > .load > .comBay {
+    width: 80px;
+    height: 60px;
+    float: left;
+    margin: 2px;
+}
+
+.above > .unload > .comBay > .bay40InCom,
+.below > .unload > .comBay > .bay40InCom {
+    background: #b477b1;
+    width: 80px;
+    height: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid silver;
+}
+
+.above > .load > .comBay > .bay40InCom,
+.below > .load > .comBay > .bay40InCom {
+    background: #3f45b4;
+    width: 80px;
+    height: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid silver;
+}
+
+.above > .unload > .comBay > .bay20sInCom,
+.below > .unload > .comBay > .bay20sInCom {
+    background: #b477b1;
+    width: 80px;
+    height: 30px;
+    display: flex;
+}
+
+.above > .load > .comBay > .bay20sInCom,
+.below > .load > .comBay > .bay20sInCom {
+    background: #3f45b4;
+    width: 80px;
+    height: 30px;
+    display: flex;
+}
+
+.above > .unload > .comBay > .bay20sInCom > .bay20InComLeft,
+.above > .load > .comBay > .bay20sInCom > .bay20InComLeft,
+.below > .unload > .comBay > .bay20sInCom > .bay20InComLeft,
+.below > .load > .comBay > .bay20sInCom > .bay20InComLeft {
+    width: 40px;
+    height: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid silver;
+}
+
+.above > .unload > .comBay > .bay20sInCom > .bay20InComRight,
+.above > .load > .comBay > .bay20sInCom > .bay20InComRight,
+.below > .unload > .comBay > .bay20sInCom > .bay20InComRight,
+.below > .load > .comBay > .bay20sInCom > .bay20InComRight {
+    width: 40px;
+    height: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid silver;
+}
+
+/* container pending info */
+
+/* selected bay control when selecting  */
+.bayArea_40 .leftBaySelected {
+    border-left: 5px solid red;
+    border-bottom: 3px solid red;
+    border-top: 3px solid red;
+}
+
+.bayArea_40 .rightBaySelected {
+    border-right: 5px solid red;
+    border-bottom: 3px solid red;
+    border-top: 3px solid red;
+}
+
+/* selected bay control when selecting  */
+.bayArea .bayArea_20,
+.bayArea .bayArea_40,
+.mainArea .newBayArea {
+    display: inline-flex;
+}
+
+.mainArea .vesselAreaSide {
+    margin-top: 25px;
+}
+
+.bayAbove_20 {
+    width: 38px;
+    height: 80px; /*  */
+    float: left;
+    background-color: #d0ddf2;
+    margin: 2px;
+}
+
+.boardSide_inch20 {
+    width: 42px;
+    height: 10px;
+    float: left;
+    background-color: #775614;
+}
+
+.bayBelow_20 {
+    width: 38px;
+    height: 50px; /*  */
+    float: left;
+    background-color: #d0ddf2;
+    margin: 2px;
+}
+
+.conZone_20 {
+    width: 38px;
+    height: 10px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color: white;
+}
+
+.vesselConZone_inch20,
+.vessel_inch20_default {
+    width: 38px;
+    height: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: white;
+}
+
+.bayAbove_20 > .vesselBody_inch20,
+.bayBelow_20 > .vesselBody_inch20 {
+    width: 38px;
+    height: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: black;
+}
+
+.onBoardSide,
+.belowBoardSide {
+    width: 100%;
+    display: inline-flex;
+    /*vertical-align: bottom; */
+}
+
+/* jquery ui-select */
+#feedback {
+    font-size: 1.4em;
+}
+
+#selectable .ui-selecting {
+    background: #FECA40;
+}
+
+#selectable .ui-selected {
+    background: #F39814;
+    color: white;
+}
+
+/* jquery ui-select */
+/* character in span  */
+.bay20Index,
+.newBay20Index,
+.newBay20IndexInCom,
+.loadOrUnloadNum,
+.text_silver {
+    color: #cdd8f6;
+}
+
+/* character in span  */
+.newBay40IndexInCom,
+.vesselBodyBayIndex {
+    color: black;
+}
+
+.leftBaySelected .bay40Index {
+    float: right;
+    margin-right: 2px;
+}
+
+.rightBaySelected .bay40Index {
+    float: left;
+    margin-left: 2px;
+}
+
+/******* custom blink ***********/
+@-webkit-keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+.blink{
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+/******* custom blink ***********/
+
+.engineBody {
+    background-color: black !important;
+}
+
+/**** custom margin ****/
+.top50 {
+    margin-top: 50px;
+}
+
+.top100 {
+    margin-top: 100px;
+}
+
+.border2solid {
+    border: 2px solid blanchedalmond;
+}
+
+/**** custom margin ****/
+
+/******** BAY-STRUCT-LOAD-OPERATION *********/
+#define-bay-struct {
+    margin-left: 40px !important;
+}
+
+.bay-struct-define {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: fit-content;
+    border: 2px solid black;
+}
+
+.bay-struct-header {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.bay-struct-content {
+    /*height: 300px;*/
+    /*background-color: yellow;*/
+}
+
+.bay-struct-content > .bay-col-index-deck,
+.bay-struct-content > .bay-col-index-cab {
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.bay-struct-content > .bay-col-index-deck > .blank-index-deck,
+.bay-struct-content > .bay-col-index-cab > .blank-index-cab {
+    grid-column: 1;
+    background-color: purple;
+}
+
+.bay-struct-content > .bay-col-index-deck > .col-index-area-deck,
+.bay-struct-content > .bay-col-index-cab > .col-index-area-cab {
+    grid-column: 2/13;
+    display: flex;
+    /*background-color: green;*/
+}
+
+.bay-struct-content > .bay-col-index-deck > .col-index-area-deck > .col-index-zone,
+.bay-struct-content > .bay-col-index-cab > .col-index-area-cab > .col-index-zone {
+    width: 40px;
+    /*height: 50px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+.bay-struct-content > .bay-deck-lays,
+.bay-struct-content > .bay-cab-lays {
+    /*background-color: gainsboro;*/
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay {
+    /*height: 20px;*/
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    /*background-color: #64dcd9;*/
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay > .bay-lay-index,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay > .bay-lay-index {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay > .bay-lay-zones,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay > .bay-lay-zones {
+    grid-column: 2/13;
+    display: flex;
+    /*background-color: black;*/
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay > .bay-lay-zones > .con-zone-initial,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay > .bay-lay-zones > .con-zone-initial,
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay > .bay-lay-zones > .con-zone-exist,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay > .bay-lay-zones > .con-zone-exist {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid saddlebrown;
+    background-color: silver;
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay > .bay-lay-zones > .con-zone-after,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay > .bay-lay-zones > .con-zone-after {
+    width: 40px;
+    height: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*border: 2px solid red;*/
+    /*background-color: wheat;   */
+}
+
+.bay-struct-content > .vessel-hat {
+    height: 15px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    background-color: green;
+}
+
+.bay-struct-content > .vessel-hat > .blank-hat-area {
+    height: 15px;
+    grid-column: 1;
+    background-color: #dcdcb4;
+}
+
+.bay-struct-content > .vessel-hat > .hat-area {
+    /*height: 15px;*/
+    grid-column: 2/13;
+    background-color: #b3dc61;
+}
+
+.bay-struct-content > .vessel-hat > .hat-area > .hat-zone {
+    width: 20px;
+    border: 2px solid white;
+    background-color: #0c5460;
+}
+
+.container-exist-zone {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid saddlebrown;
+    background-color: white;
+}
+
+.container-red {
+    background-color: #c42018;
+}
+
+.container-green {
+    background-color: #45a417;
+}
+
+.container-blue {
+    background-color: #2b508b;
+}
+
+.container-yellow {
+    background-color: #d5db4f;
+}
+
+/******** BAY-STRUCT-LOAD-OPERATION *********/

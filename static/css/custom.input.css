@@ -1,0 +1,331 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.form-row>.form-group{
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+#add-vessel-submit{
+    margin-top: -10px;
+    margin-left: 700px;
+    position: relative;
+}
+
+#add-vessel {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 5px solid #35638f;
+}
+
+#add-vessel > h1,
+#define-bay-struct > h1 {
+    margin: 20px;
+}
+
+#control-buttons {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#control-buttons > div > button {
+    margin: 5px;
+}
+
+#control-buttons {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#control-buttons > div > button {
+    margin: 5px;
+}
+
+.zoomToggle {
+    margin-top:10px;
+    margin-bottom: 40px;
+}
+
+.bayStructArea {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.bayArea .bayZone_20 {
+    background:#2f96b4;
+    width:38px;
+    height:30px;
+    float:left;
+    margin:2px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* combined bay area */
+.bayArea .bayZone_inch40 {
+    width:38px;
+    height:30px;
+    float:left;
+    background-color:lightgrey;
+    margin:2px;
+    position: relative;
+}
+
+.newBayArea .newBay20 {
+    background:#2f96b4;
+    width: 38px;
+    height: 60px;
+    float:left;
+    margin:2px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/** newBayArea **/
+.newBayArea .comBay20_40{
+    width: 80px;
+    height:60px;
+    float: left;
+    margin: 2px;
+}
+
+.newBayArea .comBay20_40 .newBay40InCom {
+    width: 80px;
+    height: 30px;
+    float:left;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: yellow;
+}
+
+.newBayArea .comBay20_40 .newBay20InComParent {
+    width: 80px;
+    height: 30px;
+    display:flex;
+    background:#2f96b4;
+}
+
+.newBayArea .comBay20_40 .newBay20InComParent .newBay20InComLeft {
+    width: 40px;
+    height: 30px;
+    float:left;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-right: 1px solid silver;
+}
+
+.newBayArea .comBay20_40 .newBay20InComParent .newBay20InComRight {
+    width: 40px;
+    height: 30px;
+    float:left;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-left: 1px solid silver;
+}
+/* combined bay area */
+/* selected bay control when selecting  */
+.bayArea_40 .leftBaySelected {
+    border-left:5px solid red;
+    border-bottom: 3px solid red;
+    border-top: 3px solid red;
+}
+
+.bayArea_40 .rightBaySelected {
+    border-right:5px solid red;
+    border-bottom: 3px solid red;
+    border-top: 3px solid red;
+}
+
+/* selected bay control when selecting  */
+.bayArea .bayArea_20,
+.bayArea .bayArea_40,
+.bayStructArea .newBayArea {
+    display: inline-flex;
+}
+
+/* jquery ui-select */
+#feedback {
+    font-size: 1.4em;
+}
+
+#selectable .ui-selecting {
+    background: #FECA40;
+}
+
+#selectable .ui-selected {
+    background: #F39814;
+    color: white;
+}
+/* jquery ui-select */
+/* character in span  */
+.bay20Index,
+.newBay20Index,
+.newBay20IndexInCom,
+.loadOrUnloadNum,
+.text_silver{
+    color: #cdd8f6;
+}
+/* character in span  */
+.newBay40IndexInCom,
+.vesselBodyBayIndex{
+    color: black;
+}
+
+.leftBaySelected .bay40Index  {
+    float: right;
+    margin-right: 2px;
+}
+
+.rightBaySelected .bay40Index  {
+    float: left;
+    margin-left: 2px;
+}
+
+.engineBody {
+    background-color: black !important;
+}
+
+#define-bay-struct {
+    margin-left: 40px !important;
+}
+
+.bay-struct-define {
+    margin: 50px;
+    width: fit-content;
+}
+
+.bay-struct-header {
+    height: 45px;
+    display:flex;
+    justify-content:left;
+    align-items:center;
+}
+
+.bay-struct-content {
+    /*height: 300px;*/
+    /*background-color: yellow;*/
+}
+
+.bay-struct-content > .bay-col-index-deck,
+.bay-struct-content > .bay-col-index-cab {
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0,1fr));
+    /*background-color: red;*/
+}
+
+.bay-struct-content > .bay-col-index-deck > .blank-index-deck,
+.bay-struct-content > .bay-col-index-cab > .blank-index-cab {
+    grid-column: 1;
+    background-color: purple;
+}
+
+.bay-struct-content > .bay-col-index-deck > .col-index-area-deck,
+.bay-struct-content > .bay-col-index-cab > .col-index-area-cab {
+    grid-column: 2/13;
+    display: flex;
+    /*background-color: green;*/
+}
+
+.bay-struct-content > .bay-col-index-deck > .col-index-area-deck > .col-index-zone,
+.bay-struct-content > .bay-col-index-cab > .col-index-area-cab > .col-index-zone {
+    width: 40px;
+    /*height: 50px;*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*border: 1px solid black;*/
+    background-color: lightblue;
+}
+
+.bay-struct-content > .bay-deck-lays,
+.bay-struct-content > .bay-cab-lays {
+    /*background-color: gainsboro;*/
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay {
+    /*height: 20px;*/
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0,1fr));
+    /*background-color: #64dcd9;*/
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay >.bay-lay-index,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay >.bay-lay-index {
+    grid-column: 1;
+    width: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: yellow;
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay > .bay-lay-zones,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay > .bay-lay-zones {
+    grid-column: 2/13;
+    display: flex;
+    /*background-color: black;*/
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay > .bay-lay-zones > .con-zone-initial,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay > .bay-lay-zones > .con-zone-initial,
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay > .bay-lay-zones > .con-zone-exist,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay > .bay-lay-zones > .con-zone-exist {
+    width: 40px;
+    height: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 2px solid red;
+    background-color: wheat;
+}
+
+.bay-struct-content > .bay-deck-lays > .bay-deck-single-lay > .bay-lay-zones > .con-zone-after,
+.bay-struct-content > .bay-cab-lays > .bay-cab-single-lay > .bay-lay-zones > .con-zone-after {
+    width: 40px;
+    height: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*border: 2px solid red;*/
+    /*background-color: wheat;   */
+}
+
+.bay-struct-content > .vessel-hat {
+    height: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0,1fr));
+}
+
+.bay-struct-content > .vessel-hat > .blank-hat-area {
+    grid-column: 1;
+}
+
+.bay-struct-content > .vessel-hat > .hat-area {
+    grid-column: 2/13;
+    /*background-color: green;*/
+}
+
+.bay-struct-content > .vessel-hat > .hat-area > .hat-zone {
+    width: 20px;
+    border: 2px solid white;
+    background-color: #0c5460;
+}
+
+.bay-struct-zone-discard {
+    width: 40px;
+    height: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 2px solid white !important;
+    background-color: white !important;
+}

@@ -1,0 +1,77 @@
+
+#collapseVesselBerth{
+    margin-top: 60px;
+    margin-left:80px;
+}
+#PlanBerthPosition{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+#ActualBerthPosition{
+    margin-left: 120px;
+    margin-top: 60px;
+}
+.berthPosition{
+    width: auto;
+    height: auto;
+    border: 0px solid blue;
+    margin-left: 30px;
+    margin-top: -450px;
+}
+.planBerthArea{
+    width: auto;
+    height: 480px;
+    margin-top: 5px;
+    position: relative;
+}
+.planVessel{
+    border: 1px solid rosybrown;
+    margin-top: 30px;
+}
+.berthActual{
+    /*background: #5bc0de;*/
+    background:url("../images/sea.jpg")
+}
+
+.ruler_container{
+    position: relative;
+    overflow: hidden;
+    /*width: auto;*/
+    height: 5rem;
+    border: 0px solid rgb(147,184,47);
+    margin-top: 400px;
+    /*margin-left: 30px;*/
+}
+#ruler_ul{
+    transform: translatex(6rem);
+    /*width: auto;*/
+    height: 4rem;
+    position: relative;
+    /*margin-left: 20px;*/
+}
+#ruler_ul li{
+    width: 100px;
+    height: 100%;
+    text-align: right;
+    float: left;
+    list-style: none;
+    /*margin-left: 20px;*/
+}
+.line{
+    height: 5px;
+    width: 1px;
+    border: 1px solid black;
+}
+
+#picker1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#picker2{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+#berth-time-submit{
+    margin-top: 100px;
+    margin-left: 500px;
+}
